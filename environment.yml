@@ -12,7 +12,12 @@ dependencies:
   - cartopy
   - numpy
   - numba
+  - sphinx>=7.0.0
+  - pydata-sphinx-theme
+  - sphinx-design
+  - tomli
   - pip
   - pip:
     - towncrier
+    - sphinx-automodapi
     - -e .
