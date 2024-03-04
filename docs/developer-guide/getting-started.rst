@@ -32,6 +32,7 @@ Cloning the Repository
       Clone the repository:
 
       .. code-block:: console
+          :class: no-copybutton
 
           $ git clone git@github.com:radionets-project/radionets.git
           $ cd radionets
@@ -48,6 +49,7 @@ Cloning the Repository
       remote called ``upstream``, so that you can keep your fork synchronized with the main repository.
 
       .. code-block:: console
+          :class: no-copybutton
 
           $ git clone https://github.com/[YOUR-GITHUB-USERNAME]/radionets.git
           $ cd ctapipe

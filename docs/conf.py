@@ -65,6 +65,7 @@ extensions = [
 ]
 
 copybutton_exclude = ".linenos, .gp"
+copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
 
 numpydoc_show_class_members = False
 numpydoc_class_members_toctree = False
