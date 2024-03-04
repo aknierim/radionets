@@ -15,6 +15,7 @@ dependencies:
   - sphinx>=7.0.0
   - pydata-sphinx-theme
   - sphinx-design
+  - sphinx-copybutton
   - tomli
   - pip
   - pip:

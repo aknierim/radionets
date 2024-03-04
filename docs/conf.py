@@ -57,12 +57,14 @@ extensions = [
     "sphinx.ext.mathjax",
     "sphinx_automodapi.automodapi",
     "sphinx_automodapi.smart_resolver",
+    "sphinx_copybutton",
     "matplotlib.sphinxext.plot_directive",
     "numpydoc",
     "sphinx_design",
     "IPython.sphinxext.ipython_console_highlighting",
 ]
 
+copybutton_exclude = ".linenos, .gp"
 
 numpydoc_show_class_members = False
 numpydoc_class_members_toctree = False
