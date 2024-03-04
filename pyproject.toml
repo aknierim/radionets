@@ -9,4 +9,7 @@ readme = "README.rst"
 authors = [
     {name = "radionets developers"},
 ]
+license = {text = "MIT"}
+
+dynamic = ["version"]
 requires-python = ">=3.8"
