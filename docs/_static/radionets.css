@@ -21,16 +21,21 @@ html[data-theme="dark"] {
 }
 
 .bd-header-announcement p {
-  color: black;
+  color: #0c1f34;
 }
+
+/* .admonition { */
+/*   border-radius: 10px !important; */
+/* } */
 
 
 /* sphinx-design */
 .sd-card {
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 30px 10px 20px 10px;
   margin: 10px 0px;
   transition: 0.3s;
+  background: white;
 }
 
 .sd-card .sd-card-header .sd-card-text {
@@ -68,8 +73,30 @@ html[data-theme="dark"] {
 
 .sd-card .sd-btn:hover {
   --sd-color-primary-highlight: var(--pst-color-secondary);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+  background-size: 200% auto;
 }
 
+.search-button-field:hover {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+  background-size: 200% auto;
+}
+
+@keyframes pulse512 {
+ 0% {
+  box-shadow: 0 0 0 0 #05bada66;
+ }
+
+ 70% {
+  box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+ }
+
+ 100% {
+  box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+ }
+}
 
 html[data-theme="dark"] .sd-shadow-sm {
   --sd-color-shadow: #6e6e6e;
