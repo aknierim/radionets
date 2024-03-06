@@ -71,6 +71,12 @@ numpydoc_show_class_members = False
 numpydoc_class_members_toctree = False
 nbsphinx_timeout = 200  # allow max 2 minutes to build each notebook
 
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "pytorch": ("https://pytorch.org/doc/stable/", None),
+    "fastai": ("https://www.fast.ai/", None),
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -96,6 +102,14 @@ html_theme_options = {
         "alt_text": "radionets",
     },
     "github_url": "https://github.com/radionets-project/radionets",
+    "icon_links": [
+        {
+            "name": "PyPI",
+            "url": "https://pypi.org/project/radionets/",
+            "icon": "fa-brands fa-python",
+            "type": "fontawesome",
+        },
+    ],
     "header_links_before_dropdown": 6,
     "navbar_start": ["navbar-logo"],
     "navigation_with_keys": False,
