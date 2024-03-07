@@ -52,7 +52,7 @@ Cloning the Repository
           :class: no-copybutton
 
           $ git clone https://github.com/[YOUR-GITHUB-USERNAME]/radionets.git
-          $ cd ctapipe
+          $ cd radionets
           $ git remote add upstream https://github.com/radionets-project/radionets.git
 
 

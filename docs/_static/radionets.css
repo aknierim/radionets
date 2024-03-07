@@ -3,6 +3,7 @@ html[data-theme="light"] {
     --pst-color-secondary: #b69bc0;
     --pst-color-background: white;
     --pst-color-background-200: #eaf2fa;
+    --card-background: white;
 }
 
 html[data-theme="dark"] {
@@ -10,6 +11,7 @@ html[data-theme="dark"] {
     --pst-color-secondary: #fbb570;
     --pst-color-background: #0c1f34;
     --pst-color-background-200: #0f2641;
+    --card-background: var(--pst-color-background-200);
 }
 
 .bd-container {
@@ -35,7 +37,7 @@ html[data-theme="dark"] {
   padding: 30px 10px 20px 10px;
   margin: 10px 0px;
   transition: 0.3s;
-  background: white;
+  background: var(--card-background);
 }
 
 .sd-card .sd-card-header .sd-card-text {
