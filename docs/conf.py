@@ -17,6 +17,9 @@ if sys.version_info < (3, 11):
 else:
     import tomllib
 
+# Sphinx gallery
+from sphinx_gallery.sorting import FileNameSortKey
+
 # import radionets
 
 pyproject_path = Path(__file__).parent.parent / "pyproject.toml"
@@ -62,15 +65,38 @@ extensions = [
     "numpydoc",
     "sphinx_design",
     "IPython.sphinxext.ipython_console_highlighting",
+    "sphinx_gallery.gen_gallery",
 ]
 
+# settings for copybutton
 copybutton_exclude = ".linenos, .gp"
 copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
 
+# settings for numpydoc
 numpydoc_show_class_members = False
 numpydoc_class_members_toctree = False
+
+# settings for sphinx-gallery
+sphinx_gallery_conf = {
+    "examples_dirs": [
+        "../examples",
+    ],  # path to your example scripts
+    "within_subsection_order": FileNameSortKey,
+    "nested_sections": False,
+    "filename_pattern": r".*\.py",
+    "ignore_pattern": r"ipynb_to_gallery\.py",
+    "copyfile_regex": r".*\.png",
+    "promote_jupyter_magic": True,
+    "line_numbers": True,
+    "default_thumb_file": "_static/logo.svg",
+    "pypandoc": True,
+    "matplotlib_animations": True,
+}
+
 nbsphinx_timeout = 200  # allow max 2 minutes to build each notebook
 
+
+# intersphinx
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "numpy": ("https://numpy.org/doc/stable/", None),
@@ -101,6 +127,8 @@ html_theme_options = {
         "image_dark": "_static/logo_dark.svg",
         "alt_text": "radionets",
     },
+    "pygment_light_style": "default",
+    "pygment_dark_style": "lightbulb",
     "github_url": "https://github.com/radionets-project/radionets",
     "icon_links": [
         {
