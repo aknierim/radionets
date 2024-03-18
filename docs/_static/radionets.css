@@ -9,6 +9,7 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
     --pst-color-primary: #b69bc0;
     --pst-color-secondary: #fbb570;
+    --pst-color-text-base: #ebebeb;
     --pst-color-background: #0c1f34;
     --pst-color-background-200: #0f2641;
     --card-background: var(--pst-color-background-200);
@@ -26,9 +27,9 @@ html[data-theme="dark"] {
   color: #0c1f34;
 }
 
-/* .admonition { */
-/*   border-radius: 10px !important; */
-/* } */
+.admonition {
+  border-radius: 10px !important;
+}
 
 
 /* sphinx-design */
@@ -88,17 +89,53 @@ html[data-theme="dark"] {
 
 @keyframes pulse512 {
  0% {
-  box-shadow: 0 0 0 0 #05bada66;
+  box-shadow: 0 0 0 0 var(--pst-color-secondary);
  }
 
  70% {
-  box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  box-shadow: 0 0 0 10px rgb(255 255 255 / 0%);
  }
 
  100% {
-  box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  box-shadow: 0 0 0 0 rgb(255 255 255 / 0%);
  }
 }
+
+.sphx-glr-thumbcontainer {
+  border-radius: 10px;
+  transition: 0.3s;
+  border-color: var(--pst-color-primary);
+}
+
+.sphx-glr-thumbcontainer:hover {
+  border-color: var(--pst-color-secondary);
+  transform: scale(1.05);
+}
+
+.sphx-glr-thumbcontainer::after {
+  border-radius: 10px !important;
+}
+
+.reference.download.internal {
+  --pst-color-inline-code-links: white;
+  background-color: var(--pst-color-primary);
+  background-image: none !important;
+  border-radius: 40px;
+}
+
+.reference.download.internal::before {
+  color: white;
+  text-decoration: none;
+}
+
+.reference.download.internal:hover {
+  background-color: var(--pst-color-secondary) !important;
+  transition: 0.3s;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+  background-size: 200% auto;
+}
+
 
 html[data-theme="dark"] .sd-shadow-sm {
   --sd-color-shadow: #6e6e6e;
