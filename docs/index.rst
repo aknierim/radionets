@@ -44,9 +44,8 @@ Radionets Documentation
   developer-guide/index
   api-reference/index
   changelog
-  bibliography
 
-
+  
 Radionets is a deep-learning framework for the simulation and analysis of radio interferometric
 data in Python. The goal is to reconstruct calibrated observations with convolutional Neural 
 Networks to create high-resolution images. For further information, please have a look at our
