@@ -51,3 +51,5 @@ radionets/dl_framework/values.yaml
 # docs
 docs/api
 docs/_build
+docs/auto_examples
+docs/sg_execution_times.rst
