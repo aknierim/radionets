@@ -164,6 +164,7 @@ def reshape_2d(array):
 def make_axes_nice(fig, ax, im, title, phase=False, phase_diff=False, unc=False):
     """Create nice colorbars with bigger label size for every axis in a subplot.
     Also use ticks for the phase.
+
     Parameters
     ----------
     fig : figure object
@@ -217,6 +218,7 @@ def check_vmin_vmax(inp):
     Check wether the absolute of the maxmimum or the minimum is bigger.
     If the minimum is bigger, return value with minus. Otherwise return
     maximum.
+
     Parameters
     ----------
     inp : float
