@@ -100,8 +100,10 @@ nbsphinx_timeout = 200  # allow max 2 minutes to build each notebook
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "numpy": ("https://numpy.org/doc/stable/", None),
-    "pytorch": ("https://pytorch.org/doc/stable/", None),
-    "fastai": ("https://www.fast.ai/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
+    "astropy": ("https://docs.astropy.org/en/latest/", None),
+    # "pytorch": ("https://pytorch.org/doc/stable/", None),
+    # "fastai": ("https://www.fast.ai/", None),
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -110,8 +112,22 @@ templates_path = ["_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "changes"]
+exclude_patterns = [
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    "**.ipynb_checkpoints",
+    "changes",
+    "auto_examples/index.rst",
+    "auto_examples/*/*.py.md5",
+    "auto_examples/*/*.py",
+    "auto_examples/*/*.ipynb",
+]
 
+# have all links automatically associated with the right domain.
+default_role = "py:obj"
+
+suppress_warnings = ["ref.citation"]  # ignore citation not referenced warnings
 
 # -- Options for HTML output -------------------------------------------------
 
