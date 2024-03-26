@@ -1,5 +1,6 @@
 html[data-theme="light"] {
     --pst-color-primary: #fbb570;
+    --pst-color-link: #f99c3f;
     --pst-color-secondary: #b69bc0;
     --pst-color-background: white;
     --pst-color-background-200: #eaf2fa;
@@ -14,9 +15,19 @@ html[data-theme="dark"] {
     --pst-color-background-200: #0f2641;
     --card-background: var(--pst-color-background-200);
 }
+.navbar {
+  background-color: var(--pst-color-background) !important;
+}
 
 .bd-container {
   background: radial-gradient(var(--pst-color-background), var(--pst-color-background-200))
+}
+
+.bd-sidebar-primary {
+  background-color: transparent;
+}
+.bd-sidebar-secondary {
+  background-color: transparent;
 }
 
 .bd-header-announcement {
