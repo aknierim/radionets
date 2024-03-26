@@ -8,5 +8,3 @@ Developer Guide
    :maxdepth: 2
 
    getting-started
-   pullrequests
-   support-libraries
