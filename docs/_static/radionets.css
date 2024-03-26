@@ -147,6 +147,10 @@ html[data-theme="dark"] {
   background-size: 200% auto;
 }
 
+html[data-theme="dark"] div.graphviz > object.inheritance {
+  filter: invert(100%) hue-rotate(70deg) grayscale(85%) brightness(180%);
+  -webkit-filter: invert(100%) hue-rotate(70deg) grayscale(85%) brightness(180%);
+}
 
 html[data-theme="dark"] .sd-shadow-sm {
   --sd-color-shadow: #6e6e6e;

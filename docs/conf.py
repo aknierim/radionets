@@ -68,6 +68,11 @@ extensions = [
     "sphinx_gallery.gen_gallery",
 ]
 
+# graphviz/inheritance diagram settings
+graphviz_output_format = 'svg'
+inheritance_graph_attrs = dict(color="transparent", style="filled")
+inheritance_node_attrs = dict(style='rounded', color="tan1")
+
 # settings for copybutton
 copybutton_exclude = ".linenos, .gp"
 copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
