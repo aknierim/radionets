@@ -6,9 +6,8 @@ Deep-Learning Framework (`~radionets.dl_framework`)
 
 .. currentmodule:: radionets.dl_framework
 
+.. toctree::
+  :maxdepth: 1
+  :glob:
 
-Reference/API
-=============
-
-.. automodapi:: radionets.dl_framework
-    :inherited-members:
+  */index

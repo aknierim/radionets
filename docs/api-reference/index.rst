@@ -1,8 +1,8 @@
 
 
-*******************
-Radionets Reference
-*******************
+*************
+API Reference
+*************
 
 **Version**: |version|
 
