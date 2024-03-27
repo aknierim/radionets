@@ -69,9 +69,8 @@ extensions = [
 ]
 
 # graphviz/inheritance diagram settings
-graphviz_output_format = 'svg'
-inheritance_graph_attrs = dict(color="transparent", style="filled")
-inheritance_node_attrs = dict(style='rounded', color="tan1")
+graphviz_output_format = "svg"
+inheritance_node_attrs = dict(style="rounded", color="tan1")
 
 # settings for copybutton
 copybutton_exclude = ".linenos, .gp"
@@ -132,7 +131,51 @@ exclude_patterns = [
 # have all links automatically associated with the right domain.
 default_role = "py:obj"
 
-suppress_warnings = ["ref.citation"]  # ignore citation not referenced warnings
+suppress_warnings = [
+    "ref.citation",
+    "undefined label: 'locally-disable-grad-doc'"
+]
+
+nitpick_ignore = [
+    ("py:obj", "radionets.dl_framework.architectures.res_exp.GeneralELU"),
+    ("py:obj", "radionets.dl_framework.architectures.res_exp.SRBlock"),
+    ("py:obj", "radionets.dl_framework.architectures.unc_archs.GeneralELU"),
+    ("py:obj", "radionets.dl_framework.architectures.unc_archs.LocallyConnected2d"),
+    ("py:obj", "radionets.dl_framework.architectures.unc_archs.SRResNet_16"),
+    ("py:obj", "radionets.dl_framework.callbacks.Callback"),
+    ("py:obj", "radionets.dl_framework.callbacks.CancelBackwardException"),
+    ("py:obj", "radionets.dl_framework.callbacks.Path"),
+    ("py:obj", "train_inspection.py"),
+    ("py:obj", "norm_path"),
+    ("py:obj", "radionets"),
+    ("py:obj", "Callback"),
+    ("py:obj", "self.{event_name}"),
+    ("py:class", "Dropout"),
+    ("py:class", "BatchNorm"),
+    ("py:class", "Module"),
+    ("py:attr", "dst_type"),
+    ("py:attr", "dtype"),
+    ("py:attr", "device"),
+    ("py:attr", "non_blocking"),
+    ("py:attr", "requires_grad"),
+    ("py:attr", "grad_input"),
+    ("py:attr", "grad_output"),
+    ("py:attr", "assign"),
+    ("py:attr", "strict"),
+    ("py:attr", "persistent"),
+    ("py:func", "register_module_forward_hook"),
+    ("py:func", "register_module_forward_pre_hook"),
+    ("py:func", "register_module_full_backward_hook"),
+    ("py:func", "register_module_full_backward_pre_hook"),
+]
+
+nitpick_ignore_regex = [
+    ("py:class", r"torch.*"),
+    ("py:meth", r"torch.*"),
+    ("py:func", r"torch.*"),
+    ("py:class", r"fastai.*"),
+    ("py:class", r"fastcore.*"),
+]
 
 # -- Options for HTML output -------------------------------------------------
 
