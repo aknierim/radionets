@@ -112,6 +112,11 @@ html[data-theme="dark"] {
  }
 }
 
+html[data-theme="dark"] .sd-shadow-sm {
+  --sd-color-shadow: var(--pst-color-primary);
+}
+
+/* sphinx gallery */
 .sphx-glr-thumbcontainer {
   border-radius: 10px;
   transition: 0.3s;
@@ -147,11 +152,24 @@ html[data-theme="dark"] {
   background-size: 200% auto;
 }
 
-html[data-theme="dark"] div.graphviz > object.inheritance {
-  filter: invert(100%) hue-rotate(70deg) grayscale(85%) brightness(180%);
-  -webkit-filter: invert(100%) hue-rotate(70deg) grayscale(85%) brightness(180%);
+/* inheritance graphs */
+.inheritance.graphviz {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
 }
 
-html[data-theme="dark"] .sd-shadow-sm {
-  --sd-color-shadow: #6e6e6e;
+html[data-theme="light"] .inheritance.graphviz {
+  border: 2px solid var(--pst-color-primary);
+}
+
+html[data-theme="dark"] .inheritance.graphviz {
+  border: 2px solid var(--pst-color-secondary);
+}
+
+/* a bit hacky, but works for now */
+html[data-theme="dark"] div.graphviz > object.inheritance {
+  filter: hue-rotate(230deg) grayscale(15%);
+  -webkit-filter: hue-rotate(230deg) grayscale(15%);
 }
