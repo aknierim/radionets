@@ -6,6 +6,7 @@ from radionets.evaluation.plotting import plot_fitgaussian
 def fitgaussian_crop(data, amp_scale=0.97, crop_size=0.1):
     """
     Fitting a gaussian around the maximum
+
     Parameters
     ----------
     data: 2d array
@@ -61,6 +62,7 @@ def fitgaussian_iterativ(
     """
     Fitting a gaussian iteratively around the maxima.
     Fit -> Substract -> Fit -> Substract ... until stopping criteria
+
     Parameters
     ----------
     data: 2d array

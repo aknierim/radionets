@@ -226,6 +226,7 @@ def add_noise(bundle, noise_level):
 
 def interpol(img):
     """Interpolates fft sampled amplitude and phase data.
+
     Parameters
     ----------
     img : array

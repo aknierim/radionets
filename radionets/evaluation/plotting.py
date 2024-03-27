@@ -877,13 +877,14 @@ def plot_jet_results(inp, pred, truth, path, save=False, plot_format="pdf"):
     """
     Plot input images, prediction, true and diff image of the overall prediction.
     (Not component wise)
+
     Parameters
     ----------
     inp: n 4d arrays with 1 channel
         input images
     pred: n 4d arrays with multiple channels
         predicted images
-    truth:n 4d arrays with multiple channels
+    truth: n 4d arrays with multiple channels
         true images
     """
     if truth.shape[1] > 2:
@@ -928,6 +929,7 @@ def plot_jet_results(inp, pred, truth, path, save=False, plot_format="pdf"):
 def plot_jet_components_results(inp, pred, truth, path, save=False, plot_format="pdf"):
     """
     Plot input images, prediction and true image.
+
     Parameters
     ----------
     inp: n 4d arrays with 1 channel
@@ -1010,6 +1012,7 @@ def plot_fitgaussian(
     """
     Plotting the sky image with the fitted gaussian distributian and the related
     parameters.
+
     Parameters
     ----------
     data: 2d array
@@ -1067,6 +1070,7 @@ def plot_fitgaussian(
 def hist_jet_gaussian_distance(dist, path, save=False, plot_format="pdf"):
     """
     Plotting the distances between predicted and true component of several images.
+
     Parameters
     ----------
     dist: 2d array
@@ -1125,7 +1129,9 @@ def hist_jet_gaussian_distance(dist, path, save=False, plot_format="pdf"):
 
 def plot_data(x, path, rows=1, cols=1, save=False, plot_format="pdf"):
     """
-    Plotting image of the dataset
+    Plotting image of the dataset.
+
+    Parameters
     ----------
     x: array
         array of shape (n, 1, size, size), n must be at least rows * cols
