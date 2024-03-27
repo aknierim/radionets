@@ -25,7 +25,7 @@ Radionets Documentation
 **Version**: |version| **Date**: |today|
 
 **Useful links**:
-`Source Repository <hhttps://github.com/radionets-project/radionets>`__ |
+`Source Repository <https://github.com/radionets-project/radionets>`__ |
 `Issue Tracker <https://github.com/radionets-project/radionets/issues>`__ |
 `Pull Requests <https://github.com/radionets-project/radionets/pulls>`__
 
@@ -43,7 +43,7 @@ Radionets Documentation
   api-reference/index
   changelog
 
-  
+
 Radionets is a deep-learning framework for the simulation and analysis of radio interferometric
 data in Python. The goal is to reconstruct calibrated observations with convolutional Neural 
 Networks to create high-resolution images. For further information, please have a look at our
