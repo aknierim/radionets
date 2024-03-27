@@ -3,17 +3,14 @@
 
 .. _radionets:
 
-.. _currentmodule:: radionets
-
-
 .. image:: _static/logo_text.svg
-   :class: only-light
+   :class: only-light no-scaled-link
    :align: center
    :width: 110%
    :alt: The radionets logo.
 
 .. image:: _static/logo_text_dark.svg
-   :class: only-dark
+   :class: only-dark no-scaled-link
    :align: center
    :width: 110%
    :alt: The radionets logo.
@@ -23,6 +20,7 @@
 Radionets Documentation
 #######################
 
+.. currentmodule:: radionets
 
 **Version**: |version| **Date**: |today|
 
@@ -53,8 +51,8 @@ Networks to create high-resolution images. For further information, please have 
 
 Analysis strategies leading to reproducible processing and evaluation of data recorded by radio interferometers:
 
-* Simulation of datasets (see also the ``radiosim`` `repository <https://github.com/radionets-project/radiosim>`_)
-* Simulation of radio interferometer observations (see also the ``pyvisgen`` `repository <https://github.com/radionets-project/pyvisgen>`_)
+* Simulation of datasets (see also `<https://github.com/radionets-project/radiosim>`_)
+* Simulation of radio interferometer observations (see also `<https://github.com/radionets-project/pyvisgen>`_)
 * Training of deep learning models
 * Reconstruction of radio interferometric data
 
