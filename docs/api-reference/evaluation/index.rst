@@ -25,7 +25,7 @@ to methods computing characteristic values on large test datasets. In detail:
    :alt: Reconstructed source images.
 
 * Histogram of differences between predicted and true viewing angles. The image includes a
-  comparison to `wsclean <https://gitlab.com/aroffringa/wsclean>`_.
+  comparison to `<https://gitlab.com/aroffringa/wsclean>`_.
 
  .. image:: ../../../resources/hist_jet_offsets.png
    :width: 400
@@ -33,7 +33,7 @@ to methods computing characteristic values on large test datasets. In detail:
    :alt: Histogram of differences between predicted and true viewing angles.
 
 * Histogram of the ratio between predicted and true source areas. The image includes a
-  comparison to `wsclean <https://gitlab.com/aroffringa/wsclean>`_.
+  comparison to `<https://gitlab.com/aroffringa/wsclean>`_.
 
  .. image:: ../../../resources/hist_area_ratios.png
    :width: 400
@@ -41,7 +41,7 @@ to methods computing characteristic values on large test datasets. In detail:
    :alt: Histogram of the ratio between predicted and true source areas.
 
 * Histogram of flux difference in the core component. The image includes a
-  comparison to `wsclean <https://gitlab.com/aroffringa/wsclean>`_.
+  comparison to `<https://gitlab.com/aroffringa/wsclean>`_.
 
  .. image:: ../../../resources/hist_mean_diffs.png
    :width: 400
